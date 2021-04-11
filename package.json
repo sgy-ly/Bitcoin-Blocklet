@@ -23,7 +23,6 @@
     "bundle": "npm run clean && npm run build && blocklet bundle --create-release",
     "deploy": "npm run bundle && blocklet deploy .blocklet/bundle"
   },
-  "proxy": "http://localhost:3006",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -42,7 +41,23 @@
       "last 1 safari version"
     ]
   },
+  "blocklet":{
+      "group":"dapp",
+      "color":"#282c34",
+      "main":"server/index.js",
+      "logo":"logo.png",
+      "provider":"arcblock",
+      "support":"support@arcblock.io",
+      "community":"https://community.arcblockio.cn",
+      "config_url":"",
+      "public_url":"/",
+      "doc_url":""
+  },
+  "proxy": "http://localhost:3006",
   "files": [
-    "build"
+    "build",
+    "blocklet.js",
+    "README.md",
+    "package.json"
   ]
 }

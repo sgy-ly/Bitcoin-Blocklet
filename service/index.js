@@ -37,18 +37,6 @@ app.get('/block', (req, res) => {
 
 })
 
-
-app.get('/user', (req, res) => {
-    res.json([{
-        id: 2,
-        username: "wang1"
-    },
-    {
-        id: 3,
-        username: "zhanhe"
-    }]);
-})
-
 app.listen(port, () => {
     console.log(`Express ABTNode Server at http://localhost:${port}`)
 })
