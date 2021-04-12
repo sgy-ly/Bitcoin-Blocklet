@@ -1,6 +1,7 @@
 .App {
   text-align: left;
   margin: 80px;
+  min-width: 700px;
 }
 body{
   background-color: #282c34;

@@ -16,9 +16,6 @@ class BlockSearch extends Component {
       searchTransaction: null
     }
   }
-  componentDidMount() {
-
-  }
   blockSearchClick = () => {
     console.log(this.state.searchHash);
     fetch('/block?blockhash=' + this.state.searchHash)
@@ -39,8 +36,8 @@ class BlockSearch extends Component {
         }));
       });
   }
+  //改变value  todo 增加校验
   change(e) {
-    console.log(e.target.value);    //获取修改后的值
     this.setState({
       searchHash: e.target.value
     })
