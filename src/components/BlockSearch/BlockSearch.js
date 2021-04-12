@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Button } from 'antd';
 import { Input } from 'antd';
 import BlockHeader from "./BlockHeader";
-import BlockTransaction from "../BlockTransaction/BlockTransaction";
+import BlockTransaction from "../BlockTransaction/BlockTran";
 
 
 class BlockSearch extends Component {
@@ -24,15 +24,15 @@ class BlockSearch extends Component {
         console.log(prams);
         let blockDateParm;
         let searchTransactionparm;
-        if(prams.blockData){
-          blockDateParm=prams.blockData;
-          searchTransactionparm=prams.blockData.tx;
+        if (prams.blockData) {
+          blockDateParm = prams.blockData;
+          searchTransactionparm = prams.blockData.tx;
         }
 
         this.setState((state, props) => ({
-          blockDate:blockDateParm,
-          blockHeader:blockDateParm,
-          searchTransaction:searchTransactionparm
+          blockDate: blockDateParm,
+          blockHeader: blockDateParm,
+          searchTransaction: searchTransactionparm
         }));
       });
   }
@@ -61,6 +61,5 @@ class BlockSearch extends Component {
       </div>
     );
   }
-
 }
 export default BlockSearch;

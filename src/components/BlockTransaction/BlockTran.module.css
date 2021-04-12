@@ -1,0 +1,23 @@
+.tran-container{
+    margin-top: 50px;
+}
+.tran-container-title{
+    margin-left:-25px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.tran-container-title-name{
+    margin-left: 15px;
+    font-size: 22px;
+    color: rgb(181, 199, 235);
+}
+
+.tran-container-body{
+    display: flex;
+    flex-direction: row;
+}
